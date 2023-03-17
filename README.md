@@ -3,7 +3,7 @@
 In this workshop, we will learn how to wrangle, clean, analyze, and visualize Twitter data. As of writing this in March 2023, Twitter is no longer accepting applications for the research API. Thus, we will not spend time on learning how to collect data from the Twitter API. 
 
 ## The Dataset
-The data for this workshop was retrieved from the Twitter API and focuses on Tweets related to the Biden Administration's student loan forginess program. The data was collected using twarc2, a command line tool and Python library for archiving Twitter JSON data. Each tweet is represented as a JSON object that was returned from the Twitter API. You still need access tokens from Twitter in order to use twarc2 to interact with the Twitter API.
+The data for this workshop was retrieved from the API Twitter and focuses on Tweets related to the Biden Administration's student loan forginess program. The data was collected using twarc2, a command line tool and Python library for archiving Twitter JSON data. Each tweet is represented as a JSON object that was returned from the Twitter API. You still need access tokens from Twitter in order to use twarc2 to interact with the Twitter API.
 
 To collect Tweets related to the student loan forgiveness program, I made the following query:
 
@@ -22,6 +22,23 @@ You can download the dataset [here](https://gc-cuny-edu.zoom.us/j/87281241758?pw
 ```
 
 ## Reading in the JSON File
+
+Let's start by taking a look at our JSON formatted data:
+
+
+```python
+import json
+```
+
+
+```python
+f = open ('student_loan_json.jsonl', "r")
+data = json.loads(f.read())
+data
+```
+
+Taking a look at our JSON data gives us a chance to review how it is formatted. We need this information in order to properly import our JSON data into Pandas. See orient parameter in Pandas/read_json [documentation](https://pandas.pydata.org/docs/reference/api/pandas.read_json.html).
+
 
 We will use Pandas to bring our JSON data into our Python environment and use the read_json() method to import our file. We also specify a few parameters:
 - orient = split
