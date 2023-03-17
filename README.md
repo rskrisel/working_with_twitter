@@ -3,7 +3,7 @@
 In this workshop, we will learn how to wrangle, clean, analyze, and visualize Twitter data. As of writing this in March 2023, Twitter is no longer accepting applications for the research API. Thus, we will not spend time on learning how to collect data from the Twitter API. 
 
 ## The Dataset
-The data for this workshop was retrieved from the API Twitter and focuses on Tweets related to the Biden Administration's student loan forginess program. The data was collected using twarc2, a command line tool and Python library for archiving Twitter JSON data. Each tweet is represented as a JSON object that was returned from the Twitter API. You still need access tokens from Twitter in order to use twarc2 to interact with the Twitter API.
+The data for this workshop was retrieved from the Twitter API and focuses on Tweets related to the Biden Administration's student loan forginess program. The data was collected using twarc2, a command line tool and Python library for archiving Twitter JSON data. Each tweet is represented as a JSON object that was returned from the Twitter API. You still need access tokens from Twitter in order to use twarc2 to interact with the Twitter API.
 
 To collect Tweets related to the student loan forgiveness program, I made the following query:
 
