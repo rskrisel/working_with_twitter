@@ -13,7 +13,7 @@ twarc2 search "(studentloanforgiveness OR \"student loan forgiveness\" OR cancel
 ```
 In this command, I am searching for a variety of hashtags (without including the '#') and keyword phrases relating to the issue of student loan forgiveness. I specified that I don't want to include retweets (-is:retweet) and I also specified to only pick up Tweets that are in English. I selected the timeframe to be between August 2022 and March 2023, encompassing when the announcement was first made until the current Supreme Court review.
 
-You can download the dataset [here](https://gc-cuny-edu.zoom.us/j/87281241758?pwd=QnRpamMycFliU3VuL2JRWWVuckVEQT09). 
+You can download the dataset [here](https://drive.google.com/drive/folders/15MC7UJd5Sz0hSKqY2XsFUbFbAM-t065a?usp=sharing). 
 
 
 
